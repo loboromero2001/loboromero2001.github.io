@@ -1562,7 +1562,9 @@ GMaps.staticMapURL = function(options){
 
   if (options.url) {
     static_root = options.url;
+    console.log(static_root);
     static_root+="&key=AIzaSyD7tku67NCOt2mgSjkbR75EakfeZ-0KHSg";
+    console.log(static_root);
     delete options.url;
   }
 
