@@ -1562,6 +1562,7 @@ GMaps.staticMapURL = function(options){
 
   if (options.url) {
     static_root = options.url;
+    static_root+="&key=AIzaSyD7tku67NCOt2mgSjkbR75EakfeZ-0KHSg";
     delete options.url;
   }
 
