@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		<!--add bootstrap or display preorty tag, or do a table-->
+			<title>BassWalk</title>
+			<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+			<meta charset="utf-8">
+  			<meta name="viewport" content="width=device-width, initial-scale=1">
+  			<!-- NOTE: Need these links for bootstrap https://www.bootstrapcdn.com/-->
+  			<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  			<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  			<link rel="stylesheet" type="text/css" href="main.css">
+			<link rel="stylesheet" type="text/css" href="Store-App-Project.css">
+			<h1 style="text-align: center;" class="titleName"><i><big>Welcome to BassWalk</big></i></h1>
+			<h3 class="titleName" style="text-align: center;">Here you can purchase a wide variety of bass guitars!</h3>
+		</head>
+        <body>
+		<div class="container">
+        <div class="row">
+            <!-- <header> -->
+            <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://shop.fender.com/en-US/electric-basses/jazz-bass/">
+      <span class="glyphicon glyphicon-globe glyphicon_icon" aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Language<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">History</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Departments<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Yamaha</a></li>
+            <li><a href="#">Gibson</a></li>
+            <li><a href="#">Ibanez</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Acoustic Guitars</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Drum Kits</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Orders</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Purchase History</a></li>
+            <li><a href="#">Payment Options</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Delete Account</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+		<div class="bassObjects"></div>
+            <!-- <div class="col-sm-6 col-xs-4 col-lg-3">
+                <div class="thumbnail">
+                    <img src="Project Images/bass1.png" width="300" height="300">
+                    <div class="caption">
+                        <h4><a href="#"></a>Ibanez GSR200 4-String Electric Bass Flat Walnut Rosewood fretboard</h4>
+                        <address class="text-justify">
+                        Features<br>
+						Neck type: GSR4 maple neck<br>
+						Body: Mahogany body (Basswood body for TR finish)<br>
+						Fretboard: Rosewood fretboard with white dot inlay<br>
+						Fret: Medium frets<br>
+						Number of frets: 22<br>
+						Bridge: B10 bridge<br>
+						Neck pu: PSNDP neck pickup (Passive)<br>
+						Bridge pu: PSNDJ bridge pickup (Passive)<br>
+						Equaliser: Phat II EQ<br>
+						Hardware color: Chrome<br>
+						</address>
+                        <h4 style="float: left;">$199.99</h4>
+                        <h4 style="float: right;">
+                            <span class="glyphicon glyphicon-thumbs-up glyphicon_icon" aria-hidden="true" title="Add to Favorites" onclick="addRemoveFavorite(this, 0);"></span>
+                            <span class="glyphicon glyphicon-shopping-cart glyphicon_icon" aria-hidden="true" title="Add to Cart" onclick="addRemoveCart(this, 0);"></span>
+                            </h4>
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-sm-6 col-xs-4 col-lg-3">
+                <div class="thumbnail">
+                    <img src="Project Images/bass2.png" width="300" height="300">
+                    <div class="caption">
+                        <h4><a href="#">Fender Special Edition Deluxe Ash Jazz Bass Natural Ash Rosewood Fretboard</a></h4>
+                        <address class="text-justify">
+                        Features:<br>
+						Classic J Bass styling<br>
+						Ash body<br>
+						Natural finish<br>
+						Rosewood fretboard<br>
+						Two single-coil pickups<br>
+						Volume/volume/tone controls<br>
+						Chrome-plated hardware<br>
+						Case sold separately<br>
+						</address>
+                        <h4 style="float: left;">£567.24</h4>
+                        <h4 style="float: right;">
+                            <span class="glyphicon glyphicon-thumbs-up glyphicon_icon" aria-hidden="true" title="Add to Favorites" onclick="addRemoveFavorite(this, 1);"></span>
+                            <span class="glyphicon glyphicon-shopping-cart glyphicon_icon" aria-hidden="true" title="Add to Cart" onclick="addRemoveCart(this, 1);"></span>
+                            </h4>
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-4 col-lg-3">
+                <div class="thumbnail">
+                    <img src="Project Images/bass1.png" height="300" width="300">
+                    <div class="caption">
+                        <h4><a href="#">Ibanez GSR200 4-String Electric Bass Flat Walnut Rosewood fretboard</a></h4>
+                        <address class="text-justify">
+                        Features:<br>
+						Neck type: GSR4 maple neck<br>
+						Body: Mahogany body (Basswood body for TR finish)<br>
+						Fretboard: Rosewood fretboard with white dot inlay<br>
+						Fret: Medium frets<br>
+						Number of frets: 22<br>
+						Bridge: B10 bridge<br>
+						Neck pu: PSNDP neck pickup<br>
+						</address>
+                        <h4 style="float: left;">£156.47</h4>
+                        <h4 style="float: right;">
+                            <span class="glyphicon glyphicon-thumbs-up glyphicon_icon" aria-hidden="true" title="Add to Favorites" onclick="addRemoveFavorite(this, 2);"></span>
+                            <span class="glyphicon glyphicon-shopping-cart glyphicon_icon" aria-hidden="true" title="Add to Cart" onclick="addRemoveCart(this, 2);"></span>
+                            </h4>
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-4 col-lg-3 pull-right">
+                <div class="thumbnail">
+                    <img src="Project Images/bass4.png" width="300" height="300">
+                    <div class="caption">
+                        <h4><a href="#">Hofner Ignition Series Vintage Violin Bass</a></h4>
+                        <address class="text-justify">
+                        Features:<br>
+						Authentic details inspired by the original<br>
+						Spruce top<br>
+						Flamed maple back and sides<br>
+						Set neck of Maple/Beech/Maple<br>
+						Rosewood fretboard<br>
+						42mm nut<br>
+						30" scale<br>
+						22 frets<br>
+						Dot inlay</address>
+						<h4 style="float: left;">£214.379</h4>
+                        <h4 style="float: right;">
+                            <span class="glyphicon glyphicon-thumbs-up glyphicon_icon" aria-hidden="true" title="Add to Favorites" onclick="addRemoveFavorite(this, 3);"></span>
+                            <span class="glyphicon glyphicon-shopping-cart glyphicon_icon" aria-hidden="true" title="Add to Cart" onclick="addRemoveCart(this, 3);"></span>
+                            </h4>
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-4 col-lg-3">
+                <div class="thumbnail">
+                    <img src="Project Images/bass3.png" height="300" width="300">
+                    <div class="caption">
+                        <h4><a href="#">Squier Vintage Modified Jaguar Bass Special SS (Short Scale)</a></h4>
+                        <address class="text-justify">
+                        Features:<br>
+						Agathis body<br>
+						C-shaped, 30"-scale maple neck<br>
+						Rosewood fretboard with 20 medium jumbo frets<br>
+						Split single coil Precision Bass pickup (middle) and single coil Jazz Bass pickup (bridge)<br>
+						Equaliser: Phat II EQ<br>
+						Hardware color: Chrome<br>
+						</address>
+                        <h4 style="float: left;">£156.47</h4>
+                        <h4 style="float: right;">
+                            <span class="glyphicon glyphicon-thumbs-up glyphicon_icon" aria-hidden="true" title="Add to Favorites" onclick="addRemoveFavorite(this, 4);"></span>
+                            <span class="glyphicon glyphicon-shopping-cart glyphicon_icon" aria-hidden="true" title="Add to Cart" onclick="addRemoveCart(this, 4);"></span>
+                            </h4>
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-4 col-lg-3">
+                <div class="thumbnail">
+                    <img src="Project Images/bass5.png" width="300" height="300">
+                    <div class="caption">
+                        <h4><a href="#">Schecter Guitar Research Stiletto Extreme-4 Bass</a></h4>
+                        <address class="text-justify">
+                        Features:<br>
+						Construction/Scale: 6 Bolt-on / 34"<br>
+						Body: Mahogany with Figured Maple top<br>
+						Neck: Maple<br>
+						Fingerboard: Rosewood<br>
+						Frets: 24 jumbo<br>
+						Inlays: Vector<br>
+						<!-- Pickups: 2 Schecter bass Humbuckers with active EQ circuit<br>
+						Electronics: 1 Volume, 1 Blend with active 2-Band EQ<br>
+						Bridge: Diamond bass<br>
+						Binding: Creme (neck, headstock)<br>
+						Tuners: Schecter<br>
+						Case sold separately<br> -->
+                        </address>
+                        <h4 style="float: left;">£352.08</h4>
+                        <h4 style="float: right;">
+                            <span class="glyphicon glyphicon-thumbs-up glyphicon_icon" aria-hidden="true" title="Add to Favorites" onclick="addRemoveFavorite(this, 5);"></span>
+                            <span class="glyphicon glyphicon-shopping-cart glyphicon_icon" aria-hidden="true" title="Add to Cart" onclick="addRemoveCart(this, 5);"></span>
+                            </h4>
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-4 col-lg-3">
+                <div class="thumbnail">
+                    <img src="Project Images/bass6.png" height="300" width="300">
+                    <div class="caption">
+                        <h4><a href="#">Squier Affinity Series Jazz Bass Electric Bass Guitar Brown Sunburst</a></h4>
+                        <address class="text-justify">
+                        Features:<br>
+						Alder body<br>
+						Maple neck<br>
+						Rosewood fretboard<br>
+						Medium-jumbo frets<br>
+						2 vintage-style single-coil Jazz Bass pickups<br>
+                        </address>
+                        <h4 style="float: left;">£156.479</h4>
+                        <h4 style="float: right;">
+                            <span class="glyphicon glyphicon-thumbs-up glyphicon_icon" aria-hidden="true" title="Add to Favorites" onclick="addRemoveFavorite(this, 6);"></span>
+                            <span class="glyphicon glyphicon-shopping-cart glyphicon_icon" aria-hidden="true" title="Add to Cart" onclick="addRemoveCart(this, 6);"></span>
+                            </h4>
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-4 col-lg-3">
+                <div class="thumbnail">
+                    <img src="Project Images/bass7.png" height="300" width="300">
+                    <div class="caption">
+                        <h4><a href="#">Ibanez TMB100 4-String Electric Bass Guitar</a></h4>
+                        <address class="text-justify">
+                        Features:<br>
+						Neck: TMB4 Maple<br>
+						Body: Mahogany<br>
+						Fingerboard: Rosewood<br>
+						Inlay: Acrylic block inlay<br>
+						Medium frets<br>
+						Pickups: Dynamix P neck pu, Dynamix J2 bridge pu<br>
+                        </address>
+                        <h4 style="float: left;">£156.479</h4>
+                        <h4 style="float: right;">
+                            <span class="glyphicon glyphicon-thumbs-up glyphicon_icon" aria-hidden="true" title="Add to Favorites" onclick="addRemoveFavorite(this, 7);"></span>
+                            <span class="glyphicon glyphicon-shopping-cart glyphicon_icon" aria-hidden="true" title="Add to Cart" onclick="addRemoveCart(this, 7);"></span>
+                            </h4>
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-4 col-lg-3">
+                <div class="thumbnail">
+                    <img src="Project Images/bass8.png" height="300" width="300">
+                    <div class="caption">
+                        <h4><a href="#">Squier Affinity Series Bronco Bass Guitar</a></h4>
+                        <address class="text-justify">
+                        Features:<br>
+						A perfect starter bass for students<br>
+						Delivers a great tone and feel<br>
+						A solid value that no other bass can match<br>
+						EQ: Ibanez Custom Electronics 2-band EQ<br>
+						Hardware color: Chrome<br>
+                        </address>
+                        <h4 style="float: left;">£117.35</h4>
+                        <h4 style="float: right;">
+                            <span class="glyphicon glyphicon-thumbs-up glyphicon_icon" aria-hidden="true" title="Add to Favorites" onclick="addRemoveFavorite(this, 8);"></span>
+                            <span class="glyphicon glyphicon-shopping-cart glyphicon_icon" aria-hidden="true" title="Add to Cart" onclick="addRemoveCart(this, 8);"></span>
+                            </h4>
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-sm-6 col-xs-4 col-lg-3">
+                <div class="thumbnail">
+                    <img src="Project Images/bass9.png" height="300" width="300">
+                    <div class="caption">
+                        <h4><a href="#">Fender American Standard Jazz Bass 3-Color Sunburst Rosewood Fingerboard</a></h4>
+                        <address class="text-justify">
+                        Features:<br>
+						Jazz Bass body<br>
+						Modern C-shape maple neck<br>
+						Rosewood fingerboard with 20 medium jumbo frets<br>
+						Standard 4-bolt neck plate<br>
+						Fender Custom Shop '60s Jazz Bass<br>
+                        </address>
+                        <h4 style="float: left;">£860.64</h4>
+                        <h4 style="float: right;">
+                            <span class="glyphicon glyphicon-thumbs-up glyphicon_icon" aria-hidden="true" title="Add to Favorites" onclick="addRemoveFavorite(this, 9);"></span>
+                            <span class="glyphicon glyphicon-shopping-cart glyphicon_icon" aria-hidden="true" title="Add to Cart" onclick="addRemoveCart(this, 9);"></span>
+                            </h4>
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="col-sm-6 col-xs-4 col-lg-3">
+                <div class="thumbnail">
+                    <img src="img/mug11.jpg" alt="" class="img-responsive coffee_mug_thumbnail">
+                    <div class="caption">
+                        <h4><a href="#">Monster</a></h4>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h4 style="float: left;">$14.99</h4>
+                        <h4 style="float: right;">
+                            <span class="glyphicon glyphicon-thumbs-up glyphicon_icon" aria-hidden="true" title="Add to Favorites" onclick="addRemoveFavorite(this, 10);"></span>
+                            <span class="glyphicon glyphicon-shopping-cart glyphicon_icon" aria-hidden="true" title="Add to Cart" onclick="addRemoveCart(this, 10);"></span>
+                            </h4>
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="col-sm-6 col-xs-4 col-lg-3">
+                <div class="thumbnail">
+                    <img src="img/mug12.jpg" alt="" class="img-responsive coffee_mug_thumbnail">
+                    <div class="caption">
+                        <h4><a href="#">Lego</a></h4>
+                        <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h4 style="float: left;">$14.99</h4>
+                        <h4 style="float: right;">
+                            <span class="glyphicon glyphicon-thumbs-up glyphicon_icon" aria-hidden="true" title="Add to Favorites" onclick="addRemoveFavorite(this, 11);"></span>
+                            <span class="glyphicon glyphicon-shopping-cart glyphicon_icon" aria-hidden="true" title="Add to Cart" onclick="addRemoveCart(this, 11);"></span>
+                            </h4>
+                        <h4>&nbsp;</h4>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="row">
+        </div>
+        </div>
+        </body>
+			<!-- <body> -->
+
+		<script type="text/javascript" src="Store-App-Project.js"></script>
+        <!-- </body> -->
+		<footer class="bottom">
+			<div class="row">
+				<address>
+				<div class="col-sm-5">
+						<div id="contact-section">
+                            <h1>Contact us today!</h1>
+							<h3>Send an Inquiry</h3>
+					    	<div class="status alert alert-success" style="display: none;"></div>
+					    	<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="https://formspree.io/loboromero2009@gmail.com">
+					            <div class="form-group">
+					                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
+					            </div>
+					            <div class="form-group">
+					                <input type="email" name="email" class="form-control" required="required" placeholder="Email">
+					            </div>
+					            <div class="form-group">
+					                <textarea name="message" id="message" required="required" class="form-control" rows="4" placeholder="Input your inquiry here"></textarea>
+					            </div>                        
+					            <div class="form-group">
+					                <button type="submit" class="btn btn-primary pull-right">Send</button>
+					            </div>
+					        </form>	       
+					    </div>
+					</div>
+					<div class="contact-address pull-right">
+					<h3 class="address-info">Address Information:</h3>
+						BassWalk, INC<br>
+						233 S Wacker Drive<br>
+						Chicago, Illinois<br>
+						60606<br>
+						Suite 1210<br>
+						Email: help@basswalk.com<br>
+					    Phone: (773)-555-7885<br>
+					</div>				                                 
+				    </address>
+							
+			</div>
+		</footer>
+		<!-- </body> -->
+	</html>

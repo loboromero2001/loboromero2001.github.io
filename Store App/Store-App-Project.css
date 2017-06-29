@@ -1,0 +1,52 @@
+.titleName{
+	/*background-color: #FFF;
+	border: 2px solid black*/;
+	color: #FFF;
+	font-family: "Times New Roman", Times, serif;
+
+}
+
+/*.bassObjects{
+	height: 40px
+	background-color: black;
+	border: 5px solid black;*/
+.buyButtons{
+ margin: 10px;
+  width: 200px;
+  height: 30px;
+  background-color: blue;
+  border: 2px solid black;
+}
+body{
+	background-color: #999999;
+	background-image: url("Project Images/chicago.jpg");
+}
+.imageBorders{
+  border: 2px solid black;
+}
+.contact-address{
+	background-color: #FFF;
+	border: 2px solid black;
+	color: #800000;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 30px;
+}
+.address-info{
+	color: #000000;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 40px;
+
+}
+/*.second-heading{
+	background-color: #FFF;
+	border: 2px solid black;
+	color: #800000;
+	font-family: "Times New Roman", Times, serif;
+}*/
+/*.bottom{
+	background-color: #FFF;
+}*/
+.col-sm-5{
+	background-color: #FFF;
+	border: 2px solid black;
+}
